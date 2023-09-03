@@ -20,7 +20,8 @@
 
 @media screen and (max-width: 320px) {
   .footer {
-    margin: 0;
+    padding-bottom: 36px;
+    padding-top: 30px; /*This is 48px in the brief however I subtracted the difference to make up for the grid gap thats in the last card. (18px) at 320px*/
   }
 
   .footer__text {

@@ -26,6 +26,10 @@
   }
 
   .header__logo {
-    margin-left: 10px;
+    margin-left: 30px;
+  }
+
+  .header.page__section {
+    max-width: 100%; /*I figured line 22 should have fixed the header border line, I tried literally everything possible this seems like the only fix for extending the header line accross the entire page at 320px.  */
   }
 }
