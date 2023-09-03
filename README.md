@@ -16,7 +16,7 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **Github Pages**
 
-[Link to the project via Github Pages] (https://tereda92.github.io/DAMIANS-SPRINT-3-Project-FIGMA)
+[Link to the project via Github Pages] (https://tereda92.github.io/DAMIANS-SPRINT-3-Project-FIGMA) I'm aware the link is broken I have a meeting with Kevin Loughead in the morning regarding this issue as well as an issue I'm having with my projects constantly unlinking from their repositories and projects being deleted by themselves as well, it has been a recurring issue for me since starting this program.
 
 ## Plan on improving the project
 

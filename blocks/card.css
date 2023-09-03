@@ -3,23 +3,6 @@
   margin-top: 47.25px;
 }
 
-.cards__list {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, 282px);
-  grid-gap: 20px 18px;
-  padding: 0;
-  margin: 0 auto;
-  list-style-type: none;
-  max-width: 1000px;
-}
-
-/* .card {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  border-radius: 10px;
-} */
 
 .card__image {
   width: 282px;
@@ -67,11 +50,5 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 480px) {
-  .cards__list {
-    padding: 15px 0 18px;
-  }
-}
 
 
-/* Path: Blocks/footer.css */
