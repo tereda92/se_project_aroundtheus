@@ -4,18 +4,18 @@
 }
 
 .cards__list {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 282px);
-    grid-gap: 20px 18px;
-    padding: 0;
-    margin: 0 auto;
-    list-style-type: none;
-    max-width: 1000px;
-  }
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 282px);
+  grid-gap: 20px 18px;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+  max-width: 1000px;
+}
 
-  @media screen and (max-width: 480px) {
-    .cards__list {
-      padding: 15px 0 18px;
-    }
+@media screen and (max-width: 480px) {
+  .cards__list {
+    padding: 15px 0 18px;
   }
+}
