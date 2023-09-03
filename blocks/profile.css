@@ -12,7 +12,6 @@
     "title button"
     "description description";
   grid-template-columns: minmax(auto, 395px) 34px;
-  overflow: hidden;
 }
 
 .profile__edit-button {
@@ -24,8 +23,9 @@
   margin-top: 15px;
   opacity: 1;
   position: relative;
-  transition: opacity 0.5s ease;
-  border: 1px solid white;
+  transition: opacity 0.6s ease;
+  border: 2px solid #fff;
+  border-radius: 2px;
 }
 
 .profile__edit-button:hover {
@@ -40,8 +40,9 @@
   margin-left: auto;
   opacity: 1;
   position: relative;
-  transition: opacity 0.5s ease;
-  border: 1px solid white;
+  transition: opacity 0.6s ease;
+  border: 2px solid #fff;
+  border-radius: 2px;
   min-width: 50px;
 }
 
@@ -85,7 +86,6 @@
 @media screen and (max-width: 1100px) {
   .profile {
     margin-top: 0;
-    max-width: 880px;
   }
 
   .profile__edit-button {
@@ -113,21 +113,20 @@
   .profile__info {
     margin-right: 20px;
   }
+}
 
-  @media screen and (max-width: 775px) {
-    .profile__name {
-      font-size: 40px;
-      line-height: 29px;
-    }
+@media screen and (max-width: 775px) {
+  .profile__name {
+    font-size: 40px;
+    line-height: 29px;
+  }
 
-    .profile__add-button {
-      height: 50px;
-      width: 50px;
-    }
+  .profile__add-button {
+    width: 50px;
+  }
 
-    .profile__edit-button {
-      margin-top: 0px;
-    }
+  .profile__edit-button {
+    margin-top: 0px;
   }
 }
 
@@ -143,8 +142,6 @@
   }
 
   .profile__info {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     width: calc(100% - 12px);
     margin-right: 0;
@@ -166,7 +163,6 @@
   .profile {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   .profile__name {
@@ -181,13 +177,11 @@
   }
 
   .profile__edit-button {
-    margin-left: 10px;
     margin-top: 3px;
   }
 
   .profile__name {
     font-size: 22px;
-    line-height: 29px;
     margin-left: 28px;
   }
 
@@ -202,8 +196,6 @@
   }
 
   .profile__image {
-    margin-right: 0;
-    margin-bottom: 30px;
     justify-content: center;
     display: flex;
   }
