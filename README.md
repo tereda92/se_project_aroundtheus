@@ -16,7 +16,7 @@ This project is made so all the elements are displayed correctly on popular scre
 
 **Github Pages**
 
-[Link to the project via Github Pages] (https://tereda92.github.io/se_project_aroundtheus) I've tried everything from relinking the file paths in the html and css folders, I've tried deleting the images and readding them with different names, i've commited each change to see what effect it has on the webpage link, in my live version the webpage looks fantastic but this link doesn't reflect what is actually in my code. I've run out of ideas for how to fix this issue i'm at a loss hopefully you can comment what you think may be the problem with the way the github pages link is displaying. It's different from browser to browser....I'm at a loss....... SEEMS TO BE MISSING EDIT, HEART, AND ADD BUTTON although I feel everything is organized and linked correctly.
+[Link to the project via Github Pages] (https://tereda92.github.io/se_project_aroundtheus)
 
 ## Plan on improving the project
 
