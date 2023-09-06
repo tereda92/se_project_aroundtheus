@@ -2,6 +2,7 @@
   padding-top: 45px;
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  max-width:100%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -28,8 +29,3 @@
   .header__logo {
     margin-left: 30px;
   }
-
-  .header.page__section {
-    max-width: 100%; /*I figured line 22 should have fixed the header border line, I tried literally everything possible this seems like the only fix for extending the header line accross the entire page at 320px.  */
-  }
-}
