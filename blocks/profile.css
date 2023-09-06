@@ -194,6 +194,7 @@
     transform: scale(0.75);
   }
 
+
   .profile__image {
     justify-content: center;
     display: flex;
@@ -208,3 +209,5 @@
     margin-top: 14px;
   }
 }
+
+
