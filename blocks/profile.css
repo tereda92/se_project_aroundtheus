@@ -76,7 +76,6 @@
   width: 120px;
   height: 120px;
   border-radius: 50%;
-
   object-fit: cover;
   background-position: center;
   margin-right: 24px;
@@ -88,7 +87,7 @@
   }
 
   .profile__edit-button {
-    margin-right:10px;
+    margin-right: 10px;
   }
 
   .profile__info {
@@ -142,7 +141,7 @@
 
   .profile__name {
     margin-bottom: 14px;
-    padding-right:0;
+    padding-right: 0;
     margin-bottom: 14px;
   }
 
@@ -187,7 +186,6 @@
   .profile__edit-button {
     margin-top: 3px;
     margin-right: 5px;
-    
   }
 
   .profile__name {
