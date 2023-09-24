@@ -27,3 +27,4 @@ const initialCards = [
 ];
 
 console.log(initialCards);
+S
