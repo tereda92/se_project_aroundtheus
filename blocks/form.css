@@ -1,0 +1,39 @@
+.form__name {
+  width: 430px;
+  height: 14px;
+  margin-top: 41px;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 13px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.form__description {
+  width: 430px;
+  height: 14px;
+  margin-top: 31px;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 13px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.form__button {
+  background-color: black;
+  color: white;
+  width: 430px;
+  top: 438px;
+  margin-top: 35px;
+  height: 51px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}

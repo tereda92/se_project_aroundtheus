@@ -58,26 +58,6 @@
   margin:0;
 }
 
-.modal__button {
-  background-color:black;
-  color:white;
-  width:358px;
-  top:438px;
-}
-
-
-.modal__name {
-  max-width:358px;
-  height:14px;
-  margin-top: 54px;
-}
-
-.modal__description {
-max-width:358px;
-height:14px;
-}
-
-
 @media screen and (max-width: 630px) {
 
  
