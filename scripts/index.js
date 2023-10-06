@@ -40,6 +40,9 @@ const profileDescriptionInput = document.querySelector("#profile-description-inp
 console.log(profileName.textContent);
 
 profileEditButton.addEventListener("click", () => {
+  profileTitleInput.value = profileTitle.textContent;
+
+
   profileEditModal.classList.add("modal__opened");
 });
 
