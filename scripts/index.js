@@ -64,4 +64,5 @@ profileEditForm.addEventListener("submit", (e) => {
   profileName.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
   closePopup()
-});
+})
+
