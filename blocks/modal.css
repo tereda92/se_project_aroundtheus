@@ -58,8 +58,17 @@
   margin:0;
 }
 
-@media screen and (max-width: 630px) {
 
- 
+@media (max-width: 590px) {
+  .modal__container {
+    width: 282px;
+    height: 322px;
+    top: 123px;
+    left: 19px;
+    border-radius: 10px;
+    
+  }
 }
+
+
 

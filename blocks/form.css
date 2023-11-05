@@ -37,3 +37,22 @@
   font-size: 18px;
   line-height: 1.2;
 }
+
+@media (max-width: 590px) {
+  .form__name,
+  .form__description {
+    width: 238px; 
+    margin-left: 19px; 
+    margin-right: 19px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form__button {
+    width: 238px; 
+    height: 46px; 
+    top: 374px; 
+    border-radius: 2px;
+    
+    
+  }
