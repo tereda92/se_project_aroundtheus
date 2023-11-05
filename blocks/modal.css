@@ -63,19 +63,35 @@
   .modal__container {
     width: 282px;
     height: 322px;
-    top: 123px;
+    top: 155px;
     left: 19px;
     border-radius: 10px;
-    
-  }
-}
-
-@media (max-width: 500px) {
-  .modal__container {
+    padding-bottom: 0;
     position: fixed !important; 
    left: 50% !important;
    transform: translate(-50%, -50%) !important;
    
+    
   }
 }
 
+@media (max-width: 460px) {
+  .modal__container {
+    width: 238px;
+    height: 322px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 10px;
+  }
+
+    .modal__close {
+      width:26px;
+      bottom: calc(100% + 26px);
+      left: calc(100% - 26px);
+    }
+
+    .modal__heading {
+      font-size: 18px;
+      
+    }
+  }
