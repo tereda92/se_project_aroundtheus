@@ -49,9 +49,7 @@ function getCardElement(cardData) {
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
 
-  cardTitleEl.textContent = cardData.name;   /*  HEY! in regards to what you called out on line 56
-  I believe this okay because I have the card title text within my initialCards.forEach loop here!
- I aplogize in advance if I misunderstood what your're requesting! */
+  cardTitleEl.textContent = cardData.name;   
 
   return cardElement;
 }
