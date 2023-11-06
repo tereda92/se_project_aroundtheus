@@ -10,7 +10,7 @@
   padding: 0 19px;
 }
 
-.modal__opened {
+.modal_opened {
   display: flex;
 }
 
@@ -24,6 +24,8 @@
   margin-top:195px;
   margin-left:auto;
   margin-right:auto;
+  width:430px;
+  height: 330px;
 }
 
 .modal__form {
@@ -45,6 +47,11 @@
   outline: none;
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  opacity: 0.6;
   cursor: pointer;
 }
 
