@@ -42,10 +42,15 @@
   .form__input { 
     margin-left: 19px; 
     margin-right: 19px;
+    margin-top: 55px;
   }
 
   .form__button {
-    height: 46px; 
+    margin-top: auto; 
+    margin-bottom: 25px; 
     border-radius: 2px;
-  }
+    position: absolute; 
+    bottom: 25px; 
+    width: calc(100% - 38px); 
+}
 }
