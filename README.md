@@ -19,5 +19,3 @@ This project is made so all the elements are displayed correctly on popular scre
 [Link to the project via Github Pages] (https://tereda92.github.io/se_project_aroundtheus)
 
 ## Plan on improving the project
-
-- Videos get confusing when different tutors have different classes & selectors I would recommend having just one tutor explain an entire project from start to finish if theres going to be videos to go off of.
