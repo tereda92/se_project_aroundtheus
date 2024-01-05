@@ -18,4 +18,4 @@ This project is made so all the elements are displayed correctly on popular scre
 
 [Link to the project via Github Pages] (https://tereda92.github.io/se_project_aroundtheus)
 
-
+SUGGESTIONS 
