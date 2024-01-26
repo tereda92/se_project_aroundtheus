@@ -78,3 +78,7 @@ initialCards.forEach((cardData) => {
 
   cardListEl.appendChild(cardElement);
 });
+
+initialCards.forEach((cardData) => {
+ cardsWrapper.prepend(getCardElement(initialCards[i]));
+})
