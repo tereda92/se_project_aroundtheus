@@ -35,6 +35,8 @@ const profileEditCloseButton = document.querySelector("#profile__edit-close-butt
 const addNewCardButton = document.querySelector(".profile__add-button");
 const addCardModal = document.querySelector("#add-card-modal");
 const addCardCloseButton = document.querySelector("#profile__add-close-button");
+const likeButtons = document.querySelectorAll(".card__like-button");
+console.log(likeButtons);
 
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 const cardListEl = document.querySelector(".cards__list");
@@ -64,7 +66,7 @@ function handleProfileEditSubmit(e) {
 function openModal(modal) {
   modal.classList.add('modal_opened');
 }
-
+// values for edit modal//
 profileEditButton.addEventListener("click", () => {
   openModal(profileEditModal);
   profileTitleInput.value = profileName.textContent;
