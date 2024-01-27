@@ -32,6 +32,7 @@ const profileDescription = document.querySelector(".profile__description");
 const profileTitleInput = document.querySelector("#profile-title-input");
 const profileDescriptionInput = document.querySelector("#profile-description-input");
 const profileEditCloseButton = document.querySelector("#profile__edit-close-button");
+const addCardModal = document.querySelector("#add-card-modal");
 
 const profileEditForm = profileEditModal.querySelector(".modal__form");
 const cardListEl = document.querySelector(".cards__list");
@@ -61,17 +62,24 @@ function handleProfileEditSubmit(e) {
   closePopup();
 }
 
-profileEditButton.addEventListener("click", () => {
+function openModal(modal) {modal.classList.add('modal_opened');
+}
+
+profileEditButton.addEventListener("click", () => {openModal(profileEditModal);
   profileTitleInput.value = profileName.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
   profileEditModal.classList.add("modal_opened");
 });
+
 
 profileEditCloseButton.addEventListener("click", () => {
   closePopup();
 });
 
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
+// ADD NEW CARD BUTTON //
+addNewCardButton.addEventListener("click", () => {openModal(addCardModal);
+
 
 initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData); 
@@ -81,5 +89,4 @@ initialCards.forEach((cardData) => {
 initialCards.forEach((cardData) => {
  cardListEl.prepend(getCardElement(cardData));
 })
-
-
+});
