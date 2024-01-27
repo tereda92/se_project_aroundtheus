@@ -42,6 +42,8 @@
       <p class="footer__text">&copy; 2020 Around the US</p>
     </footer>
 
+    <!-- Edit card modal-->
+    
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
         <button class="modal__close" id="profile__edit-close-button"></button>
@@ -61,6 +63,34 @@
             id="profile-description-input" 
             name="description" 
             placeholder="Description" 
+            required
+          />
+          <button class="form__button" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+
+<!-- Add card modal-->
+    
+   <div class="modal" id="profile-edit-modal">
+      <div class="modal__container">
+        <button class="modal__close" id="profile__edit-close-button"></button>
+        <h2 class="modal__heading">New Place</h2>
+        <form class="form modal__form">
+          <input 
+            class="form__input_title" 
+            type="text" 
+            id="profile-title-edit" 
+            name="title" 
+            placeholder="Title" 
+            required
+          />
+          <input 
+            class="form__input_url" 
+            type="text" 
+            id="profile-description-input" 
+            name="url" 
+            placeholder="Image URL" 
             required
           />
           <button class="form__button" type="submit">Save</button>
