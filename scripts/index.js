@@ -101,13 +101,20 @@ addCardCloseButton.addEventListener("click", () => {
 
 addCardForm.addEventListener("submit", function(e) {
   e.preventDefault();
+  const cardNameInput = addCardModal.querySelector("#profile-title-input");
+  const cardLinkInput = addCardModal.querySelector("#profile-description-input");
   const cardData = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardElement = getCardElement(cardData);
   cardListEl.prepend(cardElement);
-  closePopup(addCardModal);
   cardNameInput.value = '';
   cardLinkInput.value = '';
+  closePopup(addCardModal);
 });
+
+
+addCardModal.addEventListener("click", function(e) {
+  e.stopPropagation();
+}, true);
 
 initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);
