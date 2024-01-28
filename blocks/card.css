@@ -11,7 +11,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 30px;
   align-items: center;
   justify-content: space-between;
   border-bottom-left-radius: 10px;
@@ -31,6 +31,7 @@
 
 .card__like-button {
   background: transparent url(../images/Heart-corrected.svg) center no-repeat;
+  background-size: contain;
   width: 21px;
   height: 29px;
   border: none;
