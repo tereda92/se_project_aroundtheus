@@ -6,12 +6,20 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
-  display:none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0s 0.3s;
   padding: 0 19px;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal_opened {
   display: flex;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s;
 }
 
 .modal__container {
@@ -20,14 +28,11 @@
   border-radius: 10px;
   margin: auto;
   position: relative;
-  max-width:430px;
-  margin-top:195px;
-  margin-left:auto;
-  margin-right:auto;
-  width:430px;
+  max-width: 430px;
+  margin-top: 195px;
+  width: 430px;
   height: 330px;
 }
-
 .modal__form {
   display: flex;
   flex-direction: column;
@@ -41,7 +46,7 @@
   left: calc(100% + 5px);
   width: 40px;
   height: 40px;
-  background-image: url(///images/Closebutton.svg)
+  background-image: url(.//images/Closebutton.svg)
   border: none;
   background-color: transparent;
   outline: none;
