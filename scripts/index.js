@@ -1,7 +1,7 @@
 const initialCards = [
   {
     name: "Yosemite Valley",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/yosemite.jpg",
+    link: "https://cdn.aarp.net/content/dam/aarp/travel/destinations/2020/09/1140-yosemite-hero.jpg",
   },
   {
     name: "Lake Louise",
