@@ -44,9 +44,9 @@
 
     <!-- Edit card modal-->
     
-    <div class="modal" id="profile-edit-modal">
+    <div class="modal" id="edit-profile-modal">
       <div class="modal__container">
-        <button class="modal__close" id="profile__edit-close-button"></button>
+        <button class="modal__close" id="edit-modal-container"></button>
         <h2 class="modal__heading">Edit profile</h2>
         <form class="form modal__form">
           <input 
@@ -73,7 +73,7 @@
 <!-- Add card modal-->
     
    <div class="modal" id="add-card-modal">
-      <div class="modal__container">
+      <div class="modal__container" id="add-modal-container">
         <button class="modal__close" id="profile__add-close-button"></button>
         <h2 class="modal__heading">New Place</h2>
         <form class="form modal__form">
@@ -93,7 +93,7 @@
             placeholder="Image URL" 
             required
           />
-          <button class="form__button" type="submit">Save</button>
+          <button class="form__button" type="submit">Create</button>
         </form>
       </div>
     </div>
@@ -107,6 +107,7 @@
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button type="button" class="card__like-button"></button>
+          <button type="button" class="card__delete-button"></button>
         </div>
       </li>
     </template>

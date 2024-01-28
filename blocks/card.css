@@ -53,3 +53,20 @@
 .card__like-button_active:hover {
   opacity: 0.8;
 }
+
+.cards__item {
+  position: relative;
+}
+
+.card__delete-button {
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  background: url('../images/Trash.svg') no-repeat center center;
+  background-size: contain;
+  width: 18px;
+  height: 19.3px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
