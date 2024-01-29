@@ -44,21 +44,16 @@ const pictureModalClose = document.getElementById('picture-modal-close');
 const modalImage = pictureModal.querySelector('.modal__image');
 
 function openModal(modal) {
-  modal.style.display = 'flex';
-  requestAnimationFrame(() => {
-    modal.classList.add('modal_opened');
-  });
+  modal.classList.add('modal_opened');
 }
 
 function closePopup(modal) {
   modal.classList.remove("modal_opened");
-  setTimeout(() => {
-    modal.style.display = 'none';
-  }, 300);
 }
 
-function openPictureModal(imageSrc) {
+function openPictureModal(imageSrc, cardName) {
   modalImage.src = imageSrc;
+  modalImage.alt = `Photo of ${cardName}`;
   openModal(pictureModal);
 }
 
@@ -73,7 +68,7 @@ function getCardElement(cardData) {
   cardImageEl.alt = cardData.name;
   cardTitleEl.textContent = cardData.name;
 
-  cardImageEl.addEventListener('click', () => openPictureModal(cardImageEl.src));
+  cardImageEl.addEventListener('click', () => openPictureModal(cardImageEl.src, cardData.name));
 
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button_active");
@@ -120,15 +115,9 @@ addCardForm.addEventListener("submit", function(e) {
   const cardData = { name: cardName, link: cardLink };
   const cardElement = getCardElement(cardData);
   cardListEl.prepend(cardElement);
-  document.querySelector("#profile-title-input").value = '';
-  document.querySelector("#profile-description-input").value = '';
+  addCardForm.reset();
   closePopup(addCardModal);
 });
-
-addCardModal.addEventListener("click", function(e) {
-  e.stopPropagation();
-});
-
 
 initialCards.forEach((cardData) => {
   const cardElement = getCardElement(cardData);

@@ -2,6 +2,7 @@
   display: block;
   width: 282px;
   height: 282px;
+  cursor: pointer;
 }
 
 .card__description {
@@ -48,6 +49,7 @@
 .card__like-button:active,
 .card__like-button:focus {
   opacity: 1;
+  cursor: pointer;
 }
 
 .card__like-button_active:hover {
