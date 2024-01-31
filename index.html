@@ -1,117 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Around the U.S</title>
-
-    <meta name="description" content="Around the US" />
-    <meta name="keywords" content="Around the US, Sprint 4, Project" />
-    <meta name="author" content="Damian Tereda" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="pages/index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body class="page">
-    <div class="page__content">
-      <header class="header page__section">
-        <img
-          src="./images/headerlogofinal.svg"
-          alt="Around the US"
-          class="header__logo"
-        />
-      </header>
-      <main class="content">
-        <section class="profile page__section">
-          <img
-            src="images/jacques-cousteau.jpg"
-            alt="Avatar"
-            class="profile__image"
-          />
-          <div class="profile__info">
-            <h1 class="profile__name">Jacques Cousteau</h1>
-            <button type="button" class="profile__edit-button"></button>
-            <p class="profile__description">Explorer</p>
-          </div>
-          <button type="button" class="profile__add-button"></button>
-        </section>
-        <section class="cards">
-          <ul class="cards__list"></ul>
-        </section>
-      </main>
-    </div>
-    <footer class="footer page__section">
-      <p class="footer__text">&copy; 2020 Around the US</p>
-    </footer>
-    <div class="modal" id="edit-profile-modal">
-      <div class="modal__container">
-        <button class="modal__close" id="edit-modal-container"></button>
-        <h2 class="modal__heading">Edit profile</h2>
-        <form class="form modal__form">
-          <input 
-            class="form__input" 
-            type="text" 
-            id="profile-title-input" 
-            name="title" 
-            placeholder="Name" 
-            required
-          />
-          <input 
-            class="form__input" 
-            type="text" 
-            id="profile-description-input" 
-            name="description" 
-            placeholder="Description" 
-            required
-          />
-          <button class="form__button" type="submit">Save</button>
-        </form>
-      </div>
-    </div>  
-    <div class="modal" id="picture-modal">
-      <div class="modal__container modal__container--picture">
-        <button class="modal__close" id="picture-modal-close"></button>
-        <img src="" alt="Enlarged picture" class="modal__image">
-        <p class="modal__image-description"></p>
-      </div>
-    </div>
-    <div class="modal" id="add-card-modal">
-      <div class="modal__container" id="add-modal-container">
-        <button class="modal__close" id="profile__add-close-button"></button>
-        <h2 class="modal__heading">New Place</h2>
-        <form class="form modal__form">
-          <input 
-            class="form__input" 
-            type="text" 
-            id="profile-title-input" 
-            name="title" 
-            placeholder="Title" 
-            required
-          />
-          <input 
-            class="form__input" 
-            type="text" 
-            id="profile-description-input" 
-            name="url" 
-            placeholder="Image URL" 
-            required
-          />
-          <button class="form__button" type="submit">Create</button>
-        </form>
-      </div>
-    </div>
-    <template id="card-template"> 
-      <li class="cards__item card">
-        <img
-          src=""
-          class="card__image"
-          alt=""
-        />
-        <div class="card__description">
-          <h2 class="card__title"></h2>
-          <button type="button" class="card__like-button"></button>
-          <button type="button" class="card__delete-button"></button>
+<head>
+  <meta charset="UTF-8" />
+  <title>Around the U.S</title>
+  <meta name="description" content="Around the US" />
+  <meta name="keywords" content="Around the US, Sprint 4, Project" />
+  <meta name="author" content="Damian Tereda" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="pages/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="page">
+  <div class="page__content">
+    <header class="header page__section">
+      <img src="./images/headerlogofinal.svg" alt="Around the US" class="header__logo" />
+    </header>
+    <main class="content">
+      <section class="profile page__section">
+        <img src="images/jacques-cousteau.jpg" alt="Avatar" class="profile__image" />
+        <div class="profile__info">
+          <h1 class="profile__name">Jacques Cousteau</h1>
+          <button type="button" class="profile__edit-button"></button>
+          <p class="profile__description">Explorer</p>
         </div>
-      </li>
-    </template>
-    <script src="./scripts/index.js" defer></script>
-  </body>
+        <button type="button" class="profile__add-button"></button>
+      </section>
+      <section class="cards">
+        <ul class="cards__list"></ul>
+      </section>
+    </main>
+  </div>
+  <footer class="footer page__section">
+    <p class="footer__text">&copy; 2020 Around the US</p>
+  </footer>
+  <div class="modal" id="edit-profile-modal">
+    <div class="modal__container">
+      <button class="modal__close" id="edit-modal-container"></button>
+      <h2 class="modal__heading">Edit profile</h2>
+      <form class="form modal__form">
+        <input class="form__input" 
+        type="text" 
+        id="profile-title-input" 
+        name="title" 
+        placeholder="Name" required />
+        <input class="form__input" 
+        type="text" 
+        id="profile-description-input"
+         name="description" 
+         placeholder="Description" required />
+        <button class="form__button" type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="picture-modal">
+    <div class="modal__container modal__container--picture">
+      <button class="modal__close" 
+      id="picture-modal-close"></button>
+      <img src="" alt="Enlarged picture" 
+      class="modal__image">
+      <p class="modal__image-description"></p>
+    </div>
+  </div>
+  <div class="modal" id="add-card-modal">
+    <div class="modal__container" id="add-modal-container">
+      <button class="modal__close" id="profile__add-close-button"></button>
+      <h2 class="modal__heading">New Place</h2>
+      <form class="form modal__form">
+        <input class="form__input" 
+        type="text" 
+        id="card-name-input" 
+        name="name" 
+        placeholder="Title" required />
+        <input class="form__input" 
+        type="text" 
+        id="card-link-input" 
+        name="link" 
+        placeholder="Image URL" required />
+        <button class="form__button" type="submit">Create</button>
+      </form>
+    </div>
+  </div>
+  <template id="card-template">
+    <li class="cards__item card">
+      <img src="" class="card__image" alt="" />
+      <div class="card__description">
+        <h2 class="card__title"></h2>
+        <button type="button" class="card__like-button"></button>
+        <button type="button" class="card__delete-button"></button>
+      </div>
+    </li>
+  </template>
+  <script src="./scripts/index.js" defer></script>
+</body>
 </html>

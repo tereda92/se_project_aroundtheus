@@ -105,8 +105,8 @@ addCardCloseButton.addEventListener("click", () => {
 
 addCardForm.addEventListener("submit", function(e) {
   e.preventDefault();
-  const cardName = document.querySelector("#profile-title-input").value;
-  const cardLink = document.querySelector("#profile-description-input").value;
+  const cardName = document.querySelector("#card-name-input").value;
+  const cardLink = document.querySelector("#card-link-input").value;
   const cardData = { name: cardName, link: cardLink };
   const cardElement = getCardElement(cardData);
   cardListEl.prepend(cardElement);
