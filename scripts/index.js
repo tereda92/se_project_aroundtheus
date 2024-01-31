@@ -22,9 +22,8 @@ const initialCards = [
   {
     name: "Lago di Braies",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg",
-  },
+  }
 ];
-
 const profileEditButton = document.querySelector(".profile__edit-button");
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const profileName = document.querySelector(".profile__name");
@@ -54,6 +53,7 @@ function closePopup(modal) {
 function openPictureModal(imageSrc, cardName) {
   modalImage.src = imageSrc;
   modalImage.alt = `Photo of ${cardName}`;
+  document.querySelector('.modal__image-description').textContent = cardName;
   openModal(pictureModal);
 }
 
@@ -63,21 +63,16 @@ function getCardElement(cardData) {
   const cardTitleEl = cardElement.querySelector(".card__title");
   const likeButton = cardElement.querySelector(".card__like-button");
   const deleteButton = cardElement.querySelector(".card__delete-button");
-
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
   cardTitleEl.textContent = cardData.name;
-
   cardImageEl.addEventListener('click', () => openPictureModal(cardImageEl.src, cardData.name));
-
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button_active");
   });
-
   deleteButton.addEventListener("click", () => {
     cardElement.remove();
   });
-
   return cardElement;
 }
 
