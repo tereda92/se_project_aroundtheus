@@ -68,7 +68,7 @@ function getCardElement(cardData) {
   cardTitleEl.textContent = cardData.name;
   cardImageEl.addEventListener('click', () => openPictureModal(cardImageEl.src, cardData.name));
   likeButton.addEventListener("click", () => {
-    likeButton.classList.toggle("card__like-button_active");
+  likeButton.classList.toggle("card__like-button_active");
   });
   deleteButton.addEventListener("click", () => {
     cardElement.remove();
