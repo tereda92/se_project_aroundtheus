@@ -122,3 +122,5 @@ initialCards.forEach((cardData) => {
 pictureModalClose.addEventListener('click', () => {
   closePopup(pictureModal);
 });
+
+//continue//
