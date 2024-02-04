@@ -123,4 +123,3 @@ pictureModalClose.addEventListener('click', () => {
   closePopup(pictureModal);
 });
 
-//continue//
